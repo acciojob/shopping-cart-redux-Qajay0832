@@ -1,0 +1,111 @@
+.itemContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.cartImg {
+    width: 8rem;
+    height: 10rem;
+    object-fit: cover;
+}
+
+.section-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.itemDetails {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.itemTitle {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.itemAbout {
+    color: grey;
+    font-size: 0.8rem;
+}
+
+.colorContainer {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.colorShade {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+
+.colorShade:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.itemBtnContainer {
+    display: flex;
+    gap: 2rem;
+}
+
+.itemBtn {
+    padding: 0.3rem 0.8rem;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: #007FFF;
+    color: white;
+    cursor: pointer;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.itemBtn:hover {
+    background-color: blue;
+}
+
+.section-3 {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.countSec {
+    display: flex;
+}
+
+.itemCountBtn {
+    padding: 0.5rem;
+    border: 1px solid black;
+    background-color: white;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.itemCountBtn:hover {
+    background-color: blue;
+    color: white;
+}
+
+.itemCount {
+    padding: 0.5rem 2rem;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    background-color: lightgrey;
+}
