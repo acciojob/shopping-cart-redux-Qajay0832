@@ -11,9 +11,10 @@ const Card = ({ card, handleAddToCart, cardType,removeFromWishlist }) => {
             <p className="title card-title">{card.name}</p>
             <p className="about card-text">{card.about.slice(0, 20)}</p>
             <p className="amount text-muted mt-2">Rs : {card.amount}</p>
-        </div>
-        {cardType && cardType == 'wishlist' ? <button className="addCartBtn btn btn-primary" onClick={() => removeFromWishlist(card.id)
+            {cardType && cardType == 'wishlist' ? <button className="addCartBtn btn btn-primary" onClick={() => removeFromWishlist(card.id)
         }>Remove</button> : <button className="addCartBtn btn btn-primary" onClick={() => handleAddToCart(card.id)}>Add To Cart</button>}
+        </div>
+        
     </div>
 }
 
