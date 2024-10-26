@@ -2,7 +2,7 @@
 import React, { useEffect } from "react";
 import './../styles/App.css';
 import Card from "./Card.js";
-import CartContent from "./cartContent.js";
+import CartContent from "./CartContent.js";
 import Checkout from "./Checkout.js";
 import { useShop } from "../redux/useReducer.js";
 
@@ -89,7 +89,7 @@ const App = () => {
     dhanterasCoupon(selected)
   }
   const restoreTotal = () => {
-    
+
     if (shop.activeCoupon !== 'none') {
       shop.activeCoupon == 'diwali' ? diwaliCoupon(false) : dhanterasCoupon(false);
       updateCoupon('none');
@@ -142,7 +142,7 @@ const App = () => {
             {shop.cart.map((id, i) => {
               const product = shop.productsList.find(e => e.id === id);
               return product ? <><CartContent restoreTotal={restoreTotal} item={product} key={i} addMoney={addMoney} decreaseMoney={decreaseMoney} AddWishlist={AddItemToWishlist} removeItem={removeItemFromCart}
-                addMoney={addMoney} decreaseMoney={decreaseMoney} /><hr /></> : null
+              /><hr /></> : null
             })}
           </div>
         </div>
