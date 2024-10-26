@@ -1,1 +1,27 @@
-
+*{
+    margin: 0;
+    padding: 0;
+}
+.containers{
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1rem;
+    box-sizing: border-box;
+    border-radius: 1.5rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.cards{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.cartContainer{
+    flex-direction: row;
+    justify-content: space-between;
+}
+.cartItems{
+    width: 65%;
+}

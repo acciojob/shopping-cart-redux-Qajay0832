@@ -1,0 +1,50 @@
+.cardContainer {
+    box-sizing: border-box;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 1rem 2rem;
+    max-width: 17rem;
+    border: none;
+    border-radius: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    height: 25rem;
+    justify-content: center;
+}
+
+.cardImg {
+    width: 100%;
+    height: 12rem;
+}
+
+.cardDetails {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    flex-grow: 1;
+}
+
+.title {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.about {
+    color: grey;
+    font-size: 0.8rem;
+}
+
+.addCartBtn {
+    background-color: #007FFF;
+    padding: 0.5rem 2rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: white;
+    border: none;
+    border-radius: 1.5rem;
+    cursor: pointer;
+}
+
+.addCartBtn:hover {
+    background-color: blue;
+}
