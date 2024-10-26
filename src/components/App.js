@@ -1,10 +1,10 @@
 
 import React, { useEffect } from "react";
 import './../styles/App.css';
-import Card from "./Card";
-import CartContent from "./cartContent";
-import Checkout from "./Checkout";
-import { useShop } from "../redux/useReducer";
+import Card from "./Card.js";
+import CartContent from "./cartContent.js";
+import Checkout from "./Checkout.js";
+import { useShop } from "../redux/useReducer.js";
 
 const clothes = [{
   id: 1,
