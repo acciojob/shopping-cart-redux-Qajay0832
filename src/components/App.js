@@ -117,7 +117,7 @@ const App = () => {
       {/* Do not remove the main div */}
       <Navbar/>
       <div className="containers">
-        <h2 className="heading">All Products</h2>
+        <h3 className="heading">All Products</h3>
         <div className="cards">
           {shop.products.map(id => {
             const product = shop.productsList.find(e => e.id === id);
@@ -126,7 +126,7 @@ const App = () => {
         </div>
       </div>
       <div className="containers">
-        <h2>Wishlist</h2>
+        <h3>Wishlist</h3>
         <div className="cards">
           {shop.wishlist.map(id => {
             const product = shop.productsList.find(e => e.id === id);
@@ -138,7 +138,7 @@ const App = () => {
       <div className="containers cartContainer">
 
         <div className="container cartItems">
-          <h2>Cart items-{shop.cart.length}</h2>
+          <h3>Cart items-{shop.cart.length}</h3>
           <hr />
           <div>
             {shop.cart.map((id, i) => {
