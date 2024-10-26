@@ -5,6 +5,7 @@ import Card from "./Card.js";
 import CartContent from "./CartContent.js";
 import Checkout from "./Checkout.js";
 import { useShop } from "../redux/useReducer.js";
+import Navbar from "./Navbar.js";
 
 const clothes = [{
   id: 1,
@@ -114,6 +115,7 @@ const App = () => {
   return (
     <div>
       {/* Do not remove the main div */}
+      <Navbar/>
       <div className="containers">
         <h2 className="heading">All Products</h2>
         <div className="cards">

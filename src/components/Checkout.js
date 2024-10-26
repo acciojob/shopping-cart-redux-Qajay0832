@@ -53,7 +53,7 @@ const Checkout = ({ total, diwaliOffer, dhanterasOffer,oldCoupon,setOldCoupon })
                 <hr />
                 <div className='checkoutSec-3'>
                     <div className='checkoutItem'>
-                        <p className='checkoutLabel'>Total Amount</p>
+                        <p className='checkoutLabel'>Total Amount Of <br /> (including VAT)</p>
                         <p>Rs : {total} INR</p>
                     </div>
                 </div>

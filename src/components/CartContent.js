@@ -41,16 +41,16 @@ const CartContent = ({ item, AddWishlist, removeItem, addMoney, decreaseMoney,re
                     </div>
 
                     <div className='itemBtnContainer'>
-                        <button className='itemBtn' onClick={handleRemove}>Remove Item</button>
-                        <button className='itemBtn' onClick={handleAddToWishlist }>Move to Wishlist</button>
+                        <button className='btn btn-primary itemBtn' onClick={handleRemove}>Remove Item</button>
+                        <button className='btn btn-primary itemBtn' onClick={handleAddToWishlist }>Move to Wishlist</button>
                     </div>
                 </div>
             </div>
             <div className='section-3'>
                 <div className='countSec'>
-                    <button className='itemCountBtn' onClick={handleDec}>-</button>
+                    <button className='btn btn-primary itemCountBtn' onClick={handleDec}>-</button>
                     <p className='itemCount'>{pieces}</p>
-                    <button className='itemCountBtn' onClick={handleInc}>+</button>
+                    <button className='btn btn-primary itemCountBtn' onClick={handleInc}>+</button>
                 </div>
                 <div>Rs : {item.amount} INR</div>
             </div>
